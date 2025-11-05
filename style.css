@@ -1,0 +1,185 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fcefee;
+    color: #5c3a3a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-lucu,
+.footer-lucu {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-lucu h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-lucu p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.index-page {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tombol-lucu {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.tombol-lucu span {
+    margin-right: 15px;
+    font-size: 32px;
+}
+
+.tombol-lucu:hover {
+    transform: scale(1.05);
+}
+
+.surat-page {
+    background-image: url('pinkbg.jpeg'); 
+}
+
+.amplop {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    background-image: url('envelope.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.petunjuk-teks {
+    color: #8b5a6d;
+    font-weight: bold;
+}
+
+.surat {
+    display: none; 
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background-color: #fffafc;
+    border: 2px solid #f0aab0;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+}
+
+.surat p {
+    font-size: 18px;
+    line-height: 1.6; 
+}
+
+.surat.terbuka {
+    display: block;
+}
+
+.surat h2 {
+    color: #d17a96;
+    margin-top: 0;
+}
+
+.loading-page {
+    background-color: #fff0f5;
+    flex-direction: column;
+}
+
+.loading-box {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.loading-box p {
+    font-size: 18px;
+    color: #d17a96;
+    margin-top: 0;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #fcefee;
+    border: 2px solid #f8c8dc;
+    border-radius: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background-color: #ff69b4;
+    border-radius: 10px; 
+    transition: width 0.1s linear; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.persen-teks {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.progress-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 1;
+}
